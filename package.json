@@ -1,0 +1,13 @@
+{
+  "name": "raw_assets",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "npx postcss assets/css/tailwind.css -o assets/css/tailwind.output.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}
+

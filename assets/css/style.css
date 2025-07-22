@@ -1,0 +1,94 @@
+/* CSS imports */
+@import url(assets/cssreset.css);
+@import url(assets/utility.css);
+@import url(assets/header.css);
+@import url(assets/menu.css);
+@import url(assets/plans.css);
+@import url(assets/footer.css);
+/*@import url(/assets/css/assets/aboutus.css);*/
+/*@import url(/assets/css/assets/faq.css);*/
+/* vazir cdn */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/*  Vazir  Code*/
+@font-face {
+    font-family: 'Vazir Code';
+    src: url('../font/vazir/Vazir-Code.eot');
+    src: url('../font/vazir/Vazir-Code.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Code.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Code.woff') format('woff'),
+    url('../font/vazir/Vazir-Code.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Vazir Code Hack';
+    src: url('../font/vazir/Vazir-Code-Hack.eot');
+    src: url('../font/vazir/Vazir-Code-Hack.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Code-Hack.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Code-Hack.woff') format('woff'),
+    url('../font/vazir/Vazir-Code-Hack.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* Iran Sans */
+@font-face {
+    font-family: iran Sans;
+    src: url("../font/iransans/IRANSans-web.woff");
+    font-weight: normal;
+}
+
+/* B nazanin */
+@font-face {
+    font-family: B nazanin;
+    src: url("../font/bnazanin/BNazanin.woff2");
+    font-weight: normal;
+}
+
+/*⬇️Lalezar font*/
+@font-face {
+    font-family: 'lalezar';
+    src: url('../font/lalezar/Lalezar-Regular.woff2') format('woff2');
+    font-weight: normal;
+}
+
+/* font assignment */
+/*h6,h5,h4,h3,h2,h1{*/
+/*    font-family: 'Vazir Code','Vazir Code Hack',monospace;*/
+/*}*/
+.vh-10 {
+    height: 10vh;
+}
+
+.vh-15 {
+    height: 15vh;
+}
+
+.vh-25 {
+    height: 25vh;
+}
+
+.vh-40 {
+    height: 40vh;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.vh-60 {
+    height: 60vh;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.vh-80 {
+    height: 80vh;
+}
+
