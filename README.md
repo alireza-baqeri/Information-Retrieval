@@ -1,21 +1,65 @@
-MIT License
+# فشرده‌سازی فهرست‌های وارونه (Inverted Index Compression)
 
-Copyright (c) 2025 Alireza Baqeri, Arash Qavasi, Mohammad Hossein Bahrian, Alireza Farjamian & Fatemeh Hemmatian 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+این پروژه برای درس **ذخیره و بازیابی اطلاعات** به عنوان یک ابزار تحت وب جهت پیاده‌سازی و تحلیل تکنیک‌های فشرده‌سازی فهرست‌های وارونه توسعه داده شده است.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 🚀 دمو زنده (Live Demo)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+می‌توانید نسخه زنده و قابل استفاده این پروژه را از طریق لینک زیر مشاهده کنید:
+
+**[https://alireza-baqeri.github.io/Information-Retrieval/](https://alireza-baqeri.github.io/Information-Retrieval/)**
+
+*(توجه: این لینک پس از انجام مراحل گیت‌هاب و فعال‌سازی GitHub Pages کار خواهد کرد)*
+
+## 🖼️ اسکرین‌شات
+
+![تصویر پروژه](screenshot.png)
+
+*(نکته: یک اسکرین‌شات از صفحه وب پروژه خود گرفته و با نام `screenshot.png` در این پوشه ذخیره کنید.)*
+
+## 🎯 هدف پروژه
+
+هدف اصلی این پروژه، پیاده‌سازی دو الگوریتم کلیدی برای فشرده‌سازی لیست‌های ارسال (Posting Lists) است:
+1.  **Gap Encoding:** تبدیل لیست شناسه‌های اسناد به لیستی از تفاضل‌ها برای کاهش اندازه اعداد.
+2.  **Variable Byte (VB) Coding:** فشرده‌سازی اعداد کوچک حاصل از مرحله قبل با استفاده از تعداد بایت‌های متغیر.
+
+## ✨ ویژگی‌ها
+
+- **رابط کاربری تعاملی:** ورود آسان لیست شناسه‌ها و مشاهده آنی نتایج.
+- **تحلیل آماری:** نمایش حجم داده قبل و بعد از فشرده‌سازی و محاسبه نرخ فشرده‌سازی.
+- **نمایش گام به گام:** مشاهده خروجی هر مرحله (Gap List و VB Stream).
+- **تحلیل کارایی زمانی:** اندازه‌گیری و نمایش زمان لازم برای فشرده‌سازی و بازگشایی.
+- **کدنویسی سمت کاربر:** تمام محاسبات با استفاده از JavaScript در مرورگر کاربر انجام می‌شود.
+
+## 🛠️ تکنولوژی‌های استفاده شده
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+
+## 📂 نحوه اجرای پروژه به صورت محلی
+
+1.  ریپازیتوری را کلون کنید:
+    ```bash
+    git clone [https://github.com/alireza-baqeri/Information-Retrieval.git](https://github.com/alireza-baqeri/Information-Retrieval.git)
+    ```
+2.  به پوشه پروژه بروید:
+    ```bash
+    cd Information-Retrieval
+    ```
+3.  فایل `index.html` را در مرورگر خود باز کنید.
+
+## 📄 لایسنس
+
+این پروژه تحت لایسنس **MIT** منتشر شده است. برای اطلاعات بیشتر فایل `LICENSE` را مطالعه کنید.
+
+## 👨‍🏫 تقدیر و تشکر
+
+- **استاد راهنما:** جناب آقای دکتر محمدعلی دیبایی
+- **پژوهشگران (گروه ۳):**
+    - علیرضا باقری (سرگروه)
+    - آرش غواصی
+    - محمد حسین بحریان
+    - علیرضا فرجامیان
+    - فاطمه همتیان
