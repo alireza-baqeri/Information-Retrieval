@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#FFD700">
-    <title>Card Face Generator</title>
+    <title>تحلیل فشرده‌سازی فهرست وارونه</title>
     <!-- ///// links ////// -->
     <!--    bootstrap -->
 <!--    <link-->
@@ -36,7 +36,77 @@
 </head>
 <body class="body-class-light" dir="rtl">
 
+<div class="container">
+    <header>
+        <h1>پروژه ذخیره و بازیابی اطلاعات</h1>
+        <h2>فشرده‌سازی فهرست‌های وارونه: Gap & Variable Byte Coding</h2>
+    </header>
+    <div class="dropdown-container">
+        <button id="researchersBtn" class="dropdown-btn">مشاهده اسامی پژوهشگران 🧑‍💻</button>
+        <div id="researchersDropdown" class="dropdown-content">
+            <p><strong>گروه ۳:</strong></p>
+            <a href="#">علیرضا باقری (سرگروه)</a>
+            <a href="#">آرش غواصی</a>
+            <a href="#">محمد حسین بحریان</a>
+            <a href="#">علیرضا فرجامیان</a>
+            <a href="#">فاطمه همتیان</a>
+        </div>
+    </div>
+    <main>
+        <div class="input-section">
+            <label for="docIdsInput">لیست شناسه‌های اسناد (جدا شده با کاما) را وارد کنید:</label>
+            <textarea id="docIdsInput" rows="5" placeholder="مثال: 824, 829, 215406, 215410, 215530"></textarea>
+            <button id="analyzeBtn">فشرده‌سازی و تحلیل</button>
+        </div>
+        <div id="results" class="results-section hidden">
+            <h3>نتایج تحلیل:</h3>
+            <div class="output-group">
+                <h4>لیست جایابی اصلی:</h4>
+                <p id="originalList"></p>
+            </div>
+            <div class="output-group">
+                <h4>لیست کدگذاری شده با فاصله (d-gaps):</h4>
+                <p id="gapList"></p>
+            </div>
+            <div class="output-group">
+                <h4>جریان بایت‌های فشرده (VB-Encoded) - نمایش هگزادسیمال:</h4>
+                <pre id="vbStream"></pre>
+            </div>
 
+            <h3>تحلیل فضا و زمان:</h3>
+            <table id="analysisTable">
+                <thead>
+                <tr>
+                    <th>متریک</th>
+                    <th>مقدار</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>حجم اصلی (با فرض int32)</td>
+                    <td id="originalSize"></td>
+                </tr>
+                <tr>
+                    <td>حجم فشرده (VB)</td>
+                    <td id="compressedSize"></td>
+                </tr>
+                <tr>
+                    <td>نرخ فشرده‌سازی</td>
+                    <td id="compressionRatio"></td>
+                </tr>
+                <tr>
+                    <td>زمان کدگشایی (Decode Time)</td>
+                    <td id="decodeTime"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="error" class="error-message hidden"></div>
+    </main>
+    <footer>
+        <p>گروه ۳ - درس ذخیره و بازیابی اطلاعات - استاد:دکتر محمدعلی دیبایی</p>
+    </footer>
+</div>
 
 
 <!-- ////////////scripts///////// -->

@@ -1,0 +1,61 @@
+/* Dropdown Menu Styles */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-btn {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: #34495e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: right;
+    /* Position it below the button */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-content p {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Class to show the dropdown */
+.show {
+    display: block;
+}
